@@ -5,4 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Twurl</name>
   <description>A link shortener service written for Twister</description>
+  <dependencies>
+  	<dependency>
+      <groupId>com.github.cage</groupId>
+  	  <artifactId>cage</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
 </project>
