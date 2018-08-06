@@ -37,7 +37,7 @@ public class NewURLPostHandler implements RequestHandler {
 							if(StringFilter.acceptableString(alias)) {
 								// Get redirect aliases
 								Set<String> aliases = Config.parseConfig(Module.REDIRECTS_FILE, ">", "#").keySet();
-								if(aliases.contains(alias)) {
+								if(aliases.contains("/"+alias)) {
 									aliasOk = false;
 									error("The alias you requested is already taken");
 								}
